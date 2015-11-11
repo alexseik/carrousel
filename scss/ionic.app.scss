@@ -23,8 +23,8 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 
 .box {
-  margin: 0 auto;
-  width: 30%;
+  width: 100%;
+  margin: 0 2px;
   display: inline-flex;
   text-align: center;
   height: 55px;
@@ -43,7 +43,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 }
 
 .outer-container {
-  width: 95%;
+  width: 100%;
   margin: 5px auto;
   display:inline-flex;
 }

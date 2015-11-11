@@ -40,11 +40,22 @@ angular.module('starter')
       }
 
       return {
+        restrict: 'E',
         templateUrl: 'js/carrousel/carousel.html',
+        scope: {
+          groupSize: '=groupSize'
+        },
         link: function (scope) {
           var elements = CarouselMockService();
-          var elemXSlide = 3;
-          scope.slides = group(elements,elemXSlide);
+          if (isNaN(scope.groupSize) || scope.groupSize === 0) {
+            scope.groupSize = 3;
+            scope.widthPercentage = "{width:30%}";
+          } else {
+            var percentage = (scope.groupSize === 0) ? 100 : Math.floor(100 / scope.groupSize);
+            percentage -= 2;
+            scope.widthPercentage = "{width:" + percentage + "%}";
+          }
+          scope.slides = group(elements,scope.groupSize);
         }
       };
     }]);
