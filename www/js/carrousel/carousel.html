@@ -1,0 +1,10 @@
+<ion-slide-box>
+  <ion-slide ng-repeat="slide in slides">
+    <div class="outer-container">
+      <div class="box" ng-repeat="element in slide.elements"
+           ng-class="element.dato1 == 'V' ? 'ok' : element.dato1 == 'A' ? 'warning' : 'wrong'">
+        Number {{element.dato2}}
+      </div>
+    </div>
+  </ion-slide>
+</ion-slide-box>

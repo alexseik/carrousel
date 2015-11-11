@@ -9088,3 +9088,30 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+.box {
+  margin: 0 auto;
+  width: 30%;
+  display: inline-flex;
+  text-align: center;
+  height: 55px; }
+
+.warning {
+  background-color: #c1c70e; }
+
+.ok {
+  background-color: #00ae00; }
+
+.wrong {
+  background-color: #880000; }
+
+.outer-container {
+  width: 95%;
+  margin: 5px auto;
+  display: inline-flex; }
+
+.slider {
+  height: 100px; }
+
+.slider-slide {
+  text-align: center; }

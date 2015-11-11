@@ -21,3 +21,37 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+
+.box {
+  margin: 0 auto;
+  width: 30%;
+  display: inline-flex;
+  text-align: center;
+  height: 55px;
+}
+
+.warning {
+  background-color: #c1c70e;
+}
+
+.ok {
+  background-color: #00ae00;
+}
+
+.wrong {
+  background-color: #880000;
+}
+
+.outer-container {
+  width: 95%;
+  margin: 5px auto;
+  display:inline-flex;
+}
+
+.slider {
+  height: 100px;
+}
+
+.slider-slide {
+  text-align: center;
+}
